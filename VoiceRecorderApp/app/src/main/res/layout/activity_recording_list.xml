@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="net.simplifiedcoding.voicerecorderapp.RecordingListActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewRecordings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        />
+
+    <TextView
+        android:id="@+id/textViewNoRecordings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Recordings found."
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/darker_gray"
+        />
+
+
+</RelativeLayout>
